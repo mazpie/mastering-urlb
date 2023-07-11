@@ -1,0 +1,23 @@
+# @package agent
+_target_: agent.aps.APSDreamerAgent
+name: aps_dreamer
+cfg: ???
+obs_space: ???
+act_spec: ???
+grad_heads: [decoder]
+# Note: it's important to keep momentum = 1.00, otherwise SF won't work
+reward_norm: {momentum: 1.00, scale: 1.0, eps: 1e-8}
+actor_ent: 0.0
+
+skill_reward_norm: {momentum: 1.00, scale: 1.0, eps: 1e-8} # {momentum: 0.95, scale: 1.0, eps: 1e-8}
+skill_actor_ent: 0.0
+
+skill_dim: 5
+update_skill_every_step: 50
+
+knn_rms: true
+knn_k: 12
+knn_avg: true
+knn_clip: 0.0001
+num_init_frames: 4000 # set to ${num_train_frames} to disable finetune policy parameters
+lstsq_batch_size: 4096

@@ -1,0 +1,14 @@
+# @package agent
+_target_: agent.apt_dreamer.APTDreamerAgent
+name: apt_dreamer
+cfg: ???
+obs_space: ???
+act_spec: ???
+grad_heads: [decoder]
+reward_norm: {momentum: 0.95, scale: 1.0, eps: 1e-8}
+actor_ent: 0 
+
+knn_rms: false
+knn_k: 12
+knn_avg: true
+knn_clip: 0.0

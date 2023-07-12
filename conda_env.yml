@@ -1,4 +1,4 @@
-name: urlb
+name: urlb_test
 channels:
   - defaults
 dependencies:
@@ -10,9 +10,9 @@ dependencies:
   - jupyterlab=3.0.14
   - scikit-image=0.18.1
   - nvidia::cudatoolkit=11.1
-  - pytorch::pytorch
-  - pytorch::torchvision
-  - pytorch::torchaudio
+  - pytorch::pytorch=1.8.0
+  - pytorch::torchvision=0.9.0
+  - pytorch::torchaudio=0.8.0
   - pip:
     - termcolor==1.1.0
     - dm_control
@@ -29,3 +29,6 @@ dependencies:
     - opencv-python
     - wandb==0.11.1
     - moviepy==1.0.3
+    - gym==0.26.2
+    - setuptools==59.5.0
+    - protobuf==3.20

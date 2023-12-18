@@ -290,8 +290,6 @@ class Workspace:
 def main(cfg):
     from dreamer_pretrain import Workspace as W
     root_dir = Path.cwd()
-    cfg.use_wandb = False
-    cfg.project_name = 'local'
     workspace = W(cfg)
     workspace.root_dir = root_dir
     snapshot = workspace.root_dir / 'last_snapshot.pt'

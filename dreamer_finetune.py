@@ -356,8 +356,6 @@ def main(cfg):
     from dreamer_finetune import Workspace as W
     root_dir = Path.cwd()
     cfg.snapshot_base_dir = str(Path(get_original_cwd()) / cfg.snapshot_base_dir)
-    cfg.use_wandb = False
-    cfg.project_name = 'local'
     workspace = W(cfg)
     snapshot = root_dir / 'last_snapshot.pt'
     if snapshot.exists():

@@ -1,4 +1,7 @@
 # Mastering the Unsupervised Reinforcement Learning Benchmark from Pixels
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unsupervised-model-based-pre-training-for/unsupervised-reinforcement-learning-on-urlb-7)](https://paperswithcode.com/sota/unsupervised-reinforcement-learning-on-urlb-7?p=unsupervised-model-based-pre-training-for)
+
 [[website](https://masteringurlb.github.io/)] [[paper](https://arxiv.org/abs/2209.12016)]
 
 This is the code for our ICML 2023 work. You can use it to pre-train world model-based agents with different unsupervised strategies, fine-tune the agent's components selectively, and use planning (Dyna-MPC) during fine-tuning. The repo also contains an extensively tested DreamerV2 implementation in PyTorch.
